@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio-Cecile">
+    <meta name="keywords" content="html,css,javascipt,python">
+    <meta name="author" content="Cecile EONE">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico.ico" type="image/x-icon">
+    <title>Portfolio-Cecile EONE</title>
+</head>
+
+
+
+
+<body>
+    <header id="introduction">
+        <h1>Cecile Eone</h1>
+
+        <div>
+            <img class="profile-picture" src="images/sonia.jpg" alt="photo de profil">
+
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Blanditiis a minima doloribus, quis distinctio dolore adipisci repellendus vero,
+            delectus quibusdam quam quod! Doloribus cum temporibus maiores repudiandae aliquam? Magnam, perferendis!
+        </p>
+        <nav>
+            <ul>
+                <li><a class="active" href="#introduction">Presentation</a></li>
+                <li> <a href="#projects.html">Projets</a></li>
+                <li> <a href="#Contectez-moi.html">Contact</a></li>
+                <li> <a href="#call.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2 id="a-propos-de-moi">A Propos de moi</h2>
+            <p>
+                <strong>Lorem ipsum,</strong> dolor sit amet consectetur <em>adipisicing elit.</em> Eum doloremque
+                facilis ullam corporis aut modi id aspernatur numquam quis nesciunt cupiditate repellendus dicta
+                exercitationem,
+                <u>ipsam qui iure,</u> placeat saepe corrupti.
+            </p>
+        </article>
+
+        <h2 id="projects">Mes Projets</h2>
+        <!-- Carousel pour les projets -->
+        <div class="carousel-container">
+            <button id="prevSlide">Précédent</button>
+
+            <div class="slides-container">
+                <section class="slide">
+                    <a href="https://jigsaw.w3.org/css-validator/" target="_blank">
+                        <img class="project-image" src="images/logo-css.jpg" alt="logo-css">
+                    </a>
+                    <h3>Projet css</h3>
+                </section>
+
+                <section class="slide">
+                    <img class="project-image" src="images/logo-html.jpeg" alt="logo-html">
+                    <h3>Projet html</h3>
+                </section>
+
+                <section class="slide">
+                    <img class="project-image" src="images/logo-python.jpeg" alt="logo-python">
+                    <h3>Projet python</h3>
+                </section>
+            </div>
+
+            <button id="nextSlide">Suivant</button>
+        </div>
+
+        <section>
+            <h2 id="Contectez-moi">Contactez-moi</h2>
+            <form id="contactForm" method="post">
+                <div>
+                    <label for="firstName">Nom</label><br>
+                    <input type="text" id="firstName" name="firstName" placeholder="Votre Nom" required />
+                </div>
+
+                <div>
+                    <label for="lastName">Prenom</label><br>
+                    <input type="text" id="lastName" name="lastName" placeholder="Votre Prenom" required />
+                </div>
+
+                <div>
+                    <label for="phone">Telephone :</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Numero de Telephone"
+                        required>
+                </div>
+
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
+                    <p id="emailError" class="error-message"></p>
+                </div>
+
+                <div>
+                    <label for="message">Message</label><br>
+                    <textarea name="message" id="message" rows="4" cols="50" placeholder="Message"></textarea>
+                </div>
+
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+    </main>
+    <footer id="call">
+        Portfolio - © Cecile Eone | <a href="mailto:ruthsoniae@gmail.com">Contactez-moi</a>
+        <a href="https://fr.linkedin.com/" target="_blank">LinkedIn</a>
+    </footer>
+
+    <button id="scrollToTop" title="Retour en haut">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
